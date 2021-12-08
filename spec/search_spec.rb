@@ -10,6 +10,6 @@ describe 'Search' do
   it 'Searches for valid products' do
     @john.navigate
          .attempts_to(SearchFor.item('shirt'))
-         .should_see_that(TheSearch.size_is(1))
+         .should_see_that(SearchResults.size_is(1))
   end
 end
