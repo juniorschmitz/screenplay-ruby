@@ -2,7 +2,7 @@
 
 require_relative 'base_question'
 
-class TheSearch < BaseQuestion
+class SearchResults < BaseQuestion
   attr_accessor :expected_size
 
   def initialize(expected_size)
